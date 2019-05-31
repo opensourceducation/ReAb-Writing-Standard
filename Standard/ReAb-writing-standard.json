@@ -1,0 +1,66 @@
+/// ReAb v0.0.3
+{
+  "process" : [
+    { 
+      "processId" : [       /// El primer numero corresponde al proceso, y es el único que avanza incrementalmente, los numeros "string" del array [1] en delante en caso de que los haya, son un identificador del subproceso en caso de bifurcaciones //  (EJM: 2,"1") (EJM: 2,"2") (EJM: 2,"2","1")  //         
+        1
+      ],
+      "question?" : [      ///  LAS PREGUNTAS PUEDEN SER 1 PALABRA, UN TEXTO, UNA OPERACIÓN MATEMÁTICA, IMÁGENES, VIDEO, SONIDO O CUALQUIER CANTIDAD DE ELEMENTOS ABSTRACTOS 
+        "Escribe alguna variante del comando git log"
+      ],
+      "canvas?" : [       ///  *  GUARDA DATOS ESPACIALES DE COLOCACIÓN DE ELEMENTOS ESPECÍFICOS DE "question"
+        null
+      ],
+      "answer" : [        ///  GUARDA LOS ELEMENTOS ABSTRACTOS CON RELACIÓN POSITIVA: 1 PALABRA, UN TEXTO, UN RESULTADO MATEMÁTICO, IMÁGENES, VIDEO, SONIDO, ETC..
+        "git log --oneline","git log --oneline --decorate","git log —oneline -decorate | cat", "git log --oneline --graph","git log --oneline --stat","git log --pretty","git log --pretty=oneline","git log --abbrev-commit --pretty=oneline","git log --abbrev-commit","git log -p -2","git log -g master"
+      ],
+      "wrong?" : [        ///  GUARDA LOS ELEMENTOS ABSTRACTOS CON RELACIÓN NEGATIVA
+        null
+      ],
+      "results": [        /// usar cuando se busca un resultado y no se conocen todas las respuestas, o se busca alamacenar las no existentes
+        null
+      ],      
+      "anScore" : [       ///  AQUI SE GUARDAN LOS PUNTAJES DE INTERIORIZACIÓN DE CADA UNO DE LOS ELEMENTOS "answer" DE MANERA INDIVIDUAL // Y EN EL ARRAY [0] SE GUARDA LA PUNTUACIÓN TOTAL DEL PROCESO EN BASE A LA PONDERACION DE LOS DEMÁS ARRAYS  
+        0,0
+      ],
+      "interconections?" : {
+        "anotations": ["ANOTACIONES GUARDADAS EN ESTE PROCESO DEL ReAb"],
+        "mnemonics": ["RELACIONES MNEMOTÉCNICAS QUE GUARDE EL USUARIO"],
+        "questionAnswer": ["ELEMENTOS EN question QUE TAMBIEN PUEDEN FUNGIR COMO ELEMENTOS answer Y VICEVERSA"],
+        "questAuxResources": ["../recursos/ruta_de_ejemplo/imagen.jpg", ": a"],    /// Recursos complementarios a la presentación de la pregunta  //  RUTA(S) DE IMAGEN, VIDEO, SONIDO, ETC Y EL ARRAY DE QUESTION AL QUE ESTÁ ASIGNADO
+        "reaction": [" * Aquí se colocan elementos y/o programan reacciones al activar los elementos de answer o wrong, a nivel general o particular"],
+        "processReactionMap": ["git log --oneline  ::  2,2 "]   //// En caso de multiples procesos con bifurcaciones, programas rutas entre los elementos answer activados y bifurcaciones específicas "branch" en los siguientes procesos  // la ruta destino es la indicada despues de  " :: "
+      },
+      "operations?" : [    ///  *   AQUI SE GUARDA LA DIDACTICA INTERNA espacial/relacional PARA ENSEÑAR AL ReAb A EJECUTAR LA OPERACIÓN MATEMÁTICA
+        null
+      ],
+      "space?" : [      ///  *  AQUÍ SE GUARDAN COORDENADAS Y AREAS DE LA PANTALLA CON FORMAS GEOMETRICAS QUE AL PULSAR O INTERACTUAR DE MANERA CORRECTA, RESUELVE EL ReAb O PASA AL SIGUIENTE PROCESO
+        null
+      ],
+      "branch?" : [    /// La ramificación de objetos subprocesos en caso de que los haya, son guardados aquí
+        null
+      ]
+    }
+  ],
+  "rank" : {
+    "preferenceOfLearning" : 1,      /// EL ORDEN DE PRIORIDAD DE APRENDIZAJE QUE LE DA EL USUARIO
+    "turn" : 0,            /// TURNO DE EJECUCIÓN DEL ReAb 
+    "priority" : null    /// ESTE PARAMETRO SOLO SE ACTIVA CON "AAA" CUANDO EL ReAb HA SIDO CONTESTADO DE MANERA INCORRECTA. "AA" y "A" significa que el ReAb tuvo interacciones positivas luego de la falla.  CUANDO ESTA EN "null" NO SE TOMA EN CUENTA.  De la "Z a la U" indican tiempos prolongados de descanso.
+  },
+  "info" : {
+    "license": "MIT",       /// La licencia por defecto del ReAb
+    "score" : [            /// SE PONDERA EL SCORE DE TODOS LOS PROCESOS PARA SACAR ESTA PUNTUACIÓN
+      0
+    ],
+    "tags" : [      /// ETIQUETAS QUE GUARDAN INFORMACIÓN DEL ReAb, DE EJECUCION, Y DE LA VERSION PARA FACILITAR O SUGERIR SU ACTUALIZACIÓN
+      "Code"
+    ],
+    "school?" : null,      /// Identificadores académicos en caso de que los haya, como nombre de la institución, escudo, etc..
+    "groupIdentifier?" : [      /// GUARDA UN HISTORIAL DE LOS GRUPOS DE ESTUDIO POR LOS QUE HA PASADO EL ReAb.  ALGUNA DE ESTA INFORMACIÓN ENRIQUECE LAS ETIQUETAS ("tags") para el analisis de datos
+      null
+    ],
+    "identificatorOrQr?" : null,     /// GUARDA UN CÓDIGO EN CADA ARRAY QUE IDENTIFICA EL USUARIO CREADOR DEL SISO, LOS USUARIOS QUE HAN MODIFICADO SU CONTENIDO, Y EL ULTIMO USUARIO TENEDOR DEL MISMO
+    "internalization?" : null,      /// PUNTAJE GLOBAL REAL OCULTO EN UN CÓDIGO HASH DE "info.score"
+    "href?" : null      /// SE USA COMO SEGUNDO FILTRO CORRABORATIVO DEL LADO DEL BACKEND QUE LOS DATOS DE "internalization", "score" E "identificatorOrQr" NO HAYAN SIDO MODIFICADOS
+  }
+}   

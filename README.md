@@ -7,7 +7,7 @@ Creemos que los problemas más graves de la educación,como la latencia de infor
 
 
 
-Los acordeones digitales, y la forma de medir y certificar los progresos, son agnósticos de la experiencia de aprendizaje impartida por el educador o software educativo. Pero tiene el potencial de favorecer la inclusión de metodologías de aprendizaje más innovadoras, abiertas, o poco ortodoxas como montesori, basadas en la experiencia práctica, con o sin un plan de estudio de por medio.
+Los acordeones digitales, y la forma de medir y certificar los progresos, son agnósticos de la experiencia de aprendizaje impartida por el educador o software educativo. Pero tiene el potencial de favorecer la inclusión de metodologías de aprendizaje más innovadoras, abiertas, o poco ortodoxas como Montessori, basadas en la experiencia práctica, con o sin un plan de estudio de por medio.
 
 
 
@@ -34,7 +34,7 @@ Los elementos actuales para calcular el incremento o decremento del mismo, son l
 
 
 
-## Si deseas implementar el uso de ReAbs en tu aplicación educativa, puedes usar la librería ProReLedge https://www.github.com/opensourceducation/ProReLedge
+## Si deseas implementar el uso de ReAbs en tu aplicación educativa, o buscas una herramienta de aprendizaje autodidacta, puedes usar la librería ProReLedge https://www.github.com/opensourceducation/ProReLedge
 
 
 

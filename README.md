@@ -1,3 +1,5 @@
+# OUT OF MAINTAIN
+
 ReAb (Relational Abstraction o Acordeones Digitales), es una estructura de datos que propone un standard opensource de escritura de quizzes, y medición de progresos del aprendizaje humano más preciso, como una alternativa futura al sistema de calificaciones, certificaciones, e implementacion de planes de estudio actuales
 
 
